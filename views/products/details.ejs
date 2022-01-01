@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= product.name %>
+    </title>
+</head>
+<style>
+    .back {
+        border: 2px solid black;
+        background-color: aqua;
+        text-decoration-line: none;
+    }
+</style>
+
+<body>
+    <h1> Details Of The Product </h1>
+    <h2>
+        <%= product.name %>
+    </h2>
+    <ul>
+        <li>Price: <%= product.price %>
+        </li>
+        <li>Category: <%= product.category %>
+        </li>
+        <li>Size: <%= product.size %>
+        </li>
+        <li>Description: <%= product.description %>
+        </li>
+    </ul>
+    <a class="back" href="/products">All Products</a>
+</body>
+
+</html>
